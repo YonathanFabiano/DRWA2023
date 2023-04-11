@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UTS DRWA\\UTS_DRWA\\UTS_DRWA.csproj": {}
+    "D:\\DRWA\\Mongo\\UTS_DRWA\\UTS_DRWA.csproj": {}
   },
   "projects": {
-    "D:\\UTS DRWA\\UTS_DRWA\\UTS_DRWA.csproj": {
+    "D:\\DRWA\\Mongo\\UTS_DRWA\\UTS_DRWA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTS DRWA\\UTS_DRWA\\UTS_DRWA.csproj",
+        "projectUniqueName": "D:\\DRWA\\Mongo\\UTS_DRWA\\UTS_DRWA.csproj",
         "projectName": "UTS_DRWA",
-        "projectPath": "D:\\UTS DRWA\\UTS_DRWA\\UTS_DRWA.csproj",
+        "projectPath": "D:\\DRWA\\Mongo\\UTS_DRWA\\UTS_DRWA.csproj",
         "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
-        "outputPath": "D:\\UTS DRWA\\UTS_DRWA\\obj\\",
+        "outputPath": "D:\\DRWA\\Mongo\\UTS_DRWA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config"
