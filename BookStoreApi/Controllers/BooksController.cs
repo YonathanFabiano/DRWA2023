@@ -1,6 +1,7 @@
 using BookStoreApi.Models;
 using BookStoreApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace BookStoreApi.Controllers;
 
@@ -18,33 +19,40 @@ public class BooksController : ControllerBase
         await _booksService.GetAsync();
 
     [HttpGet("{id:length(24)}")]
-    public async Task<ActionResult<Book>> Get(string id)
-    {
+    public async Task<ActionResult<Book>> Get(string id){
         var book = await _booksService.GetAsync(id);
 
-        if (book is null)
-        {
+        if (book is null){
             return NotFound();
         }
 
         return book;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Post(Book newBook)
-    {
-        await _booksService.CreateAsync(newBook);
+    // [HttpPost]
+    // public async Task<IActionResult> Post(Book newBook){
+    //     await _booksService.CreateAsync(newBook);
 
-        return CreatedAtAction(nameof(Get), new { id = newBook.Id }, newBook);
+    //     return CreatedAtAction(nameof(Get), new { id = newBook.Id }, newBook);
+    // }
+    
+    public HttpResponseMessage Post(Book newBook){
+        if (ModelState.IsValid){
+            // Do something with the product (not shown).
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
+        else{
+            return new HttpResponseMessage(HttpStatusCode.BadRequest);
+        }
     }
 
+    
     [HttpPut("{id:length(24)}")]
-    public async Task<IActionResult> Update(string id, Book updatedBook)
-    {
+    public async Task<IActionResult> Update(string id, Book updatedBook){
         var book = await _booksService.GetAsync(id);
 
-        if (book is null)
-        {
+        if (book is null){
             return NotFound();
         }
 
@@ -56,12 +64,10 @@ public class BooksController : ControllerBase
     }
 
     [HttpDelete("{id:length(24)}")]
-    public async Task<IActionResult> Delete(string id)
-    {
+    public async Task<IActionResult> Delete(string id){
         var book = await _booksService.GetAsync(id);
 
-        if (book is null)
-        {
+        if (book is null){
             return NotFound();
         }
 

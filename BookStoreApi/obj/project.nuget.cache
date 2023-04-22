@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KBX0oRX9sIWOKiPqsmTRMVxfkQ747wEw3Z0ALPQ09Rv6R74BvkK2t7ygy4mu+c6WWshG1+duLxRwsp+HXCYQJw==",
+  "dgSpecHash": "fF1lBf8EMQwo70O0g1ilAlSSsxjaac0jXPLGe3tHH/l/yrXP/vkIafNgQxzRNxf8dt2TyXvfF6z0o/TRhDN9xg==",
   "success": true,
   "projectFilePath": "D:\\DRWA\\Mongo\\BookStoreApi\\BookStoreApi.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\fabia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\fabia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\fabia\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\fabia\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\fabia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\fabia\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\fabia\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
