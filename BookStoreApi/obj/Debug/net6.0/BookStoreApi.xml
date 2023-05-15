@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookStoreApi</name>
+    </assembly>
+    <members>
+        <member name="M:BookStoreApi.Controllers.BooksController.Get">
+             <summary>
+             get
+             </summary>
+             <param name=""></param>
+             <returns>A newly created TodoItem</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+             <response code="401">HTTP request has not been applied because it lacks valid authentication credentials for the requested resource</response>
+             <response code="404">The server was unable to find the requested resource</response>
+             <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
+        </member>
+        <member name="M:BookStoreApi.Controllers.BooksController.Get(System.String)">
+             <summary>
+             get id
+             </summary>
+             <param name="id"></param>
+             <returns>A newly created TodoItem</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+             <response code="401">HTTP request has not been applied because it lacks valid authentication credentials for the requested resource</response>
+             <response code="404">The server was unable to find the requested resource</response>
+             <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
+        </member>
+        <member name="M:BookStoreApi.Controllers.BooksController.Post(BookStoreApi.Models.Book)">
+             <summary>
+             post
+             </summary>
+             <param name="newBook"></param>
+             <returns>A newly created TodoItem</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+             <response code="401">HTTP request has not been applied because it lacks valid authentication credentials for the requested resource</response>
+             <response code="404">The server was unable to find the requested resource</response>
+             <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
+        </member>
+        <member name="M:BookStoreApi.Controllers.BooksController.Update(System.String,BookStoreApi.Models.Book)">
+             <summary>
+             put
+             </summary>
+             <param name="updatedBook"></param>
+             <returns>A newly created TodoItem</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+             <response code="401">HTTP request has not been applied because it lacks valid authentication credentials for the requested resource</response>
+             <response code="404">The server was unable to find the requested resource</response>
+             <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
+        </member>
+        <member name="M:BookStoreApi.Controllers.BooksController.Delete(System.String)">
+             <summary>
+             delete
+             </summary>
+             <param name="id"></param>
+             <returns>A newly created TodoItem</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+             <response code="401">HTTP request has not been applied because it lacks valid authentication credentials for the requested resource</response>
+             <response code="404">The server was unable to find the requested resource</response>
+             <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
+        </member>
+    </members>
+</doc>
