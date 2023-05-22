@@ -1,5 +1,6 @@
 using BookStoreApi.Models;
 using BookStoreApi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStoreApi.Controllers;
@@ -35,6 +36,7 @@ public class BooksController : ControllerBase
     /// <response code="404">The server was unable to find the requested resource</response>
     /// <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
     [HttpGet]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -65,6 +67,7 @@ public class BooksController : ControllerBase
     /// <response code="404">The server was unable to find the requested resource</response>
     /// <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
     [HttpGet("{id:length(24)}")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -104,6 +107,7 @@ public class BooksController : ControllerBase
     /// <response code="404">The server was unable to find the requested resource</response>
     /// <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
     [HttpPost]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -138,6 +142,7 @@ public class BooksController : ControllerBase
     /// <response code="404">The server was unable to find the requested resource</response>
     /// <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
     [HttpPut("{id:length(24)}")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -181,6 +186,7 @@ public class BooksController : ControllerBase
     /// <response code="404">The server was unable to find the requested resource</response>
     /// <response code="500">The server encountered an unexpected condition that prevented it from fulfilling the request</response>
     [HttpDelete("{id:length(24)}")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
