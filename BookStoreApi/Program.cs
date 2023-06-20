@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -65,6 +67,16 @@ builder.Services.AddAuthorization();
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddEnvironmentVariables();
 
+// add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy  =>
+                      {
+                          policy.WithOrigins("https://localhost:7050");
+                      });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -76,9 +88,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+//tambahan autektifikasi
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+// tambahan CORS
+app.UseCors(MyAllowSpecificOrigins);
+
+// auth
 IConfiguration configuration = app.Configuration;
 IWebHostEnvironment environment = app.Environment;
 

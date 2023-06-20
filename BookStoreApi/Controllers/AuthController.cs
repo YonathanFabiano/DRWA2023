@@ -27,7 +27,7 @@ namespace BookStoreApi.Controllers
 
             if (User != null)
             {
-                if (User.UserName.Equals("test@gmail.com") && User.Password.Equals("banteng"))
+                if (User.UserName.Equals("admin123@gmail.com") && User.Password.Equals("admin123"))
                 {
                     var issuer = configuration["Jwt:Issuer"];
                     var audience = configuration["Jwt:Audience"];

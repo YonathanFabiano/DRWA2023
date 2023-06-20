@@ -1,7 +1,5 @@
 D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.csproj.AssemblyReference.cache
 D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.GeneratedMSBuildEditorConfig.editorconfig
-D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.AssemblyInfoInputs.cache
-D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.AssemblyInfo.cs
 D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.csproj.CoreCompileInputs.cache
 D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.MvcApplicationPartsAssemblyInfo.cs
 D:\DRWA\Mongo\BookStoreApi\obj\Debug\net6.0\BookStoreApi.MvcApplicationPartsAssemblyInfo.cache
@@ -47,3 +45,4 @@ D:\DRWA\Mongo\BookStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dl
 D:\DRWA\Mongo\BookStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\DRWA\Mongo\BookStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 D:\DRWA\Mongo\BookStoreApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DRWA\Mongo\BookStoreApi\bin\Debug\net6.0\BookStore\obj\Debug\net6.0\project.razor.json
