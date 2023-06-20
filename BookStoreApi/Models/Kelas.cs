@@ -1,6 +1,7 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Text.Json.Serialization;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookStoreApi.Models;
 
@@ -12,5 +13,6 @@ public class Kelas
 
     [BsonElement("Name")]
     [JsonPropertyName("Name")]
+    [Required]
     public string Nama { get; set; } = null!;
 }
